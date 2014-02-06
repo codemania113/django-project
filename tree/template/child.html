@@ -1,11 +1,16 @@
 {% extends "project.html" %}
 
-{% block title %} {{node.title}} {% endblock %}
-{% block head %} {{node.title}} {% endblock %}
+{% block title_name %}
+    {{ node.title }}
+{% endblock %}
 
+{% block heading_name %}
+    {{ node.title }}
+{% endblock %}
 
 {% block content %}
-
-<br> <p> <i> {{node.content}} <i> </p> 
-
+    <br>
+    <p>
+    <i> {{ node.content }} <i>
+    </p> 
 {% endblock %}
