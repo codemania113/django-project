@@ -4,16 +4,18 @@
 <html> 
 <head>
  
-<link rel="stylesheet" type="text/css" href = "{{ link }}" >
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}styles.css" >
 </head>
-<title>{% block title %} {% endblock %}
+<title>
+{% block title_name %} {% endblock %}
 </title>
 
 
 <body>
 
 <h1> 
-{% block head %} {% endblock %} </h1> 
+{% block heading_name %} {% endblock %}
+</h1> 
 
 {% block content %} {% endblock %}
 
