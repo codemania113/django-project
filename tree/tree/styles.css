@@ -1,11 +1,15 @@
-body
+html,body
 {
-background-color:#FAF0E6;
+background-color:#EEE0E5;
 text-align:center;
 }
 h1
 {
 margin-bottom:0;
 text-align:center;
-background-color: #87CEFF;
+background-color:#87CEFF;
+}
+p
+{
+text-align:center;
 }
