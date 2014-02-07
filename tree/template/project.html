@@ -2,24 +2,20 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 
 <html> 
-<head>
- 
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}styles.css" >
-</head>
-<title>
-{% block title_name %} {% endblock %}
-</title>
-
-
-<body>
-
-<h1> 
-{% block heading_name %} {% endblock %}
-</h1> 
-
-{% block content %} {% endblock %}
-
-</body>
-
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}styles.css" >
+        <title>
+            {% block title_name %}
+            {% endblock %}
+        </title>
+    </head>
+    
+    <body>
+        <h1>
+            {% block heading_name %}
+            {% endblock %}
+        </h1> 
+        {% block content %}
+        {% endblock %}
+    </body>
 </html>
-
