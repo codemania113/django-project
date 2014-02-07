@@ -8,8 +8,9 @@ from tree.project_views import load
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', lambda r : HttpResponseRedirect('stories-and-literature/')),
+    url(r'^$', lambda r : HttpResponseRedirect('stories-and-literature/')), 
+    # url(r'^$', load, {'addr': 'stories-and-literature'}),  
     url(r'^admin/', include(admin.site.urls)),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT}),
-    url(r'(?P<addr>[^\f]+)/$', load, {}),
+    url(r'(?P<addr>[^\f]*)/$', load, {}),
 )
